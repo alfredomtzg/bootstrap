@@ -32,6 +32,13 @@
 #carousel .overlay .row {
   height: 100%;
 }
+#place-time{
+  background-color: #396998;
+  color: white;
+}
+#place-time img{
+  width: 100%;
+}
 #footer{
   background-color: #1c3643;
 }
