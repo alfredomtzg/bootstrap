@@ -36,7 +36,7 @@
               <a class="nav-link" href="#conviertete-en-orador">Conviértete en orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+              <a class="nav-link text-platzi" href="#" data-toggle="modal" data-target="#modalcompra">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@
                   <p class="d-none d-md-block">Platzi Conf llega por primera vez  a hawaii! Un evento para compartir con nuestra comunidad.
                   Ven a conocer a los oradores de primer nivel en donde podrás hacer amigos y avanzar en el mundo de la tecnología, también podrías conocer a Alfredo y ser tu siguiente Front End para tu empresa, un excelente desarrollador. </p>
                   <a class="btn btn-outline-light" href="#">Quiero ser orador</a>
-                  <button class="btn btn-platzi" type="button" name="">Comprar tickets</button>
+                  <button class="btn btn-platzi" type="button" data-toggle="modal" data-target="#modalcompra">Comprar tickets</button>
                 </div>
               </div>
             </div>
@@ -229,7 +229,7 @@
     </footer>
     <!-- footer end -->
     <!-- modal start -->
-    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="modalcompra" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -239,11 +239,22 @@
             </button>
           </div>
           <div class="modal-body">
-            ...
+            <form class="" action="index.html" method="post">
+              <div class="form-row">
+                <div class="form-group col">
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-platzi">Comprar</button>
           </div>
         </div>
       </div>
